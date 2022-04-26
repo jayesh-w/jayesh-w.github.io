@@ -1,0 +1,101 @@
+GIT AND GITHUB
+
+git init
+git add * 
+git commit -m 
+git checkout
+git branch
+git push origin master
+git merge
+git rebase
+git log
+git status
+git head
+
+github
+git remote add origin <url>
+git push origin <branch>
+git pull origin <branch>
+
+docker:
+installation : add gpg keys
+sudo apt install docker.io
+docker --version
+sudo docker pull ubuntu
+docker run -it -d ubuntu
+TO REMOVE : sudo docker system prune -a
+sudo docker run -it -d --name < yourname> ubuntu
+sudo docker ps
+sudo docker exec -it <imageid> bash
+
+TO install apache2 [ Web Server ]
+
+apt-get install apache2
+apt get update
+ls
+cd /var/www/html
+
+download git
+
+service apache2 start
+exit >> docker exit
+docker ps
+docker stop <container id>
+
+
+TO PUBLISH DOCKER 
+docker commit <cid>
+sudo docker image
+sudo docker run -it -d -P 85/82:80 demoimage
+docker ps
+docker exec it <cid> bash
+service apache2 start
+
+To send to docker hub
+docker login
+docker commit < cid> url/url
+docker images
+docker push 
+
+
+PUPPET
+
+docker ps
+docker exec -it <cid> bash
+apt update
+
+apt install wget
+wget "link"
+
+dpkg -i puppet.deb
+docker run -it -d --name slave1 ubuntu
+docker ps
+docker exec 
+
+apt install puppet-master
+apt install puppet
+
+PUPPET software config
+nano /etc/host 
+add 172.17.0.1
+puppet agent -t --debug
+systemctl start puppet-master.service
+puppet cert list
+puppet cert sign
+
+
+JENKINS
+sudo docker pull jenkins/jenkins
+docker image
+docker ps
+
+docker run -it -d -p 82:8080 jenkins/jenkins
+docker ps
+docker exec it <cid> bash 
+cat /var/J_home/secrets/InitialAdminPassword
+172.17.0.1:82
+
+
+
+
+
